@@ -1,11 +1,11 @@
-import { Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import RootNavigator from "./navigation/RootNavigator";
 
-export default function Index() {
-  return (
-    <View className="bg-green-100 rounded-xl" >
-      <Text className="text-lg font-medium " >
-	welcome to tail wind css	
-      </Text>
-    </View>
-  );
+
+export default function App(){
+  return(
+    <NavigationContainer>
+      <RootNavigator />
+    </NavigationContainer>
+  )
 }
